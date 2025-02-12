@@ -1,0 +1,130 @@
+body{
+    background: linear-gradient(155deg,#E9DDF8 47%, #CEBAE8 53%); /*to make background color transaction*/
+    scroll-behavior: smooth; /*Zaama the scrolling be smoth*/
+    font-family: 'Comfortaa', sans-serif; /*using new font*/
+    justify-content: center; /*to make the all divs and sections centered*/
+    
+}
+.nav-bar{
+    background-color: #A47DAB; /*color for nav bar*/
+    z-index: 1000; /*Ensures navbar stays on top*/
+    box-sizing: border-box; /*navbar elements are properly sized*/
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /*adding shadow for navbar*/
+}
+/*in short making sure the navbar element are in line & remove any unnecessary decoration & fix their positions*/
+.nav-bar ul{
+    margin: 0; 
+    margin-top: 0%;
+    padding: 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/*removing unnecessary decoration & font color*/
+.nav-bar li a{
+    text-decoration: none;
+    transition: background-color 0.3s;
+    padding: 5px;
+    color: #000;
+}
+/*making the name stand out a little bit*/
+.nav-bar .name{
+    color: #573a6d;
+    font-weight: bolder;
+    font-size: larger;
+}
+/*making sure elements on diffrent div inside section inline*/
+.twins , .experience11 , .work{
+    display: flex;
+}
+/*letting some space between 2 div*/
+.twin1 , .twin2{
+    margin: 10px;
+}
+/*letting some space between 3 div & adding shadow & curve box corners*/
+.work1 , .work2 , .work3 {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+/*dividing section into equals spaces for 2 div &letting some space between them */
+.ed , .exp{
+    margin: 10px;
+    max-width: 50%;
+    
+}
+/*making all the headlines type h2, mostly used as title for each section centered*/
+h2{
+    text-align: center; 
+}
+/*just decorating,sizing the button of resume download*/
+button {
+    background-color: #a64fb1; 
+    color: rgb(72, 70, 70);              
+    padding: 14px 20px;        
+    border: none;              
+    cursor: pointer;         
+    border-radius: 5px;        
+    font-size: 16px;  
+    align-items: center; 
+    justify-content: center;   
+    margin-left: 80px;     
+}
+/* Darker purple when hovering over button */
+button:hover {
+    background-color: #521d53; 
+}
+/*sizing all section & adding shadow &curving corners & centering*/
+section{
+    width: 80%;
+    margin: 20px ;
+    margin-left: 120px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    align-items: center; 
+    justify-content: center;
+
+}
+/*making the divs in line and ading space to correct the placement*/
+.contacting{
+    display: flex;
+    margin-left: 100px;
+}
+/*slightly correcting the image placement*/
+.image{
+    margin-bottom: 50px;
+}
+/*also slightly correcting the placement of the form*/
+.form{
+    margin-left: 300px;
+}
+/*to make the name's label&input in line with email's label&input and slightly leave space in between*/
+.f{
+    display: flex;
+    gap: 20px;
+}
+/*making the message input slightly bigger*/
+.m2 {
+    width: 350px;
+    height: 50px;
+
+}
+/*making icons inline & removing unnecessary decoration & fixing the placement*/
+.icons ul{
+    margin-left: 200px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 280px;
+}
+/* centering the footer and putting at the end of the page*/
+footer{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-content: end;
+}

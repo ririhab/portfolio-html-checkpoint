@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"> <!-- linking css file -->
+    <script src="./js/script.js"></script> <!-- linking js file -->
+    <link rel="icon" href="./res/icon.png" type="image/png"> <!-- adding icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- got a font online -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""> 
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;700&amp;display=swap" rel="stylesheet">
+    <title>Portfolio</title> <!-- page title -->
+</head>
+<body>
+    <!-- the audio element per requested -->
+    <audio id="welcomeAudio">
+        <source src="./res/ElevenLabs_2025-02-10T16_17_28_Matilda_pre_s50_sb75_se0_b_m2.mp3" type="audio/mpeg">
+    </audio>
+    <!-- the nav bar for the page -->
+    <div class="nav-bar">
+        <ul>
+            <li class="name">Sofia Cook</li> <!-- name of the person -->
+            <!-- here each element takes you to the desired section -->
+            <li class="home"><a href="./index.html">Home</a></li> 
+            <li class="about"><a href="#about">About</a></li>
+            <li class="work"><a href="#work">Work</a></li>
+            <li class="resume" ><a href="#resume">Resume</a></li>
+            <li class="experience1" ><a href="#experience">Experience & Education</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+
+        </ul>
+    </div>
+    <!-- contains all sections -->
+    <div class="sections">
+        <!-- first section, alittle introduction using h & p -->
+        <section id="about">
+            <h2>About me</h2>
+            <p>I'm a passionate Full-Stack Developer and AI enthusiast with expertise in React, Node.js, Python, and Django. I specialize in building dynamic, scalable web applications and exploring the power of deep learning and machine learning through frameworks like TensorFlow and PyTorch. With a strong foundation in data science, DevOps, and cloud technologies, I enjoy solving complex problems and continuously learning to stay at the forefront of innovation.</p>
+        </section>
+        <!-- 2nd section about past work zaama while dividing each project on a diffrent div -->
+        <section id="work">
+            <h2>Work</h2>
+            <p>Here are some projects I've worked on</p>
+            <div class="work">
+                <div class="work1">
+                    <h3>Personal Portfolio Website</h3>
+                    <h4>Technologies Used: HTML, CSS, JavaScript, React</h4>
+                    <p>Description: A sleek, responsive portfolio website built using React to showcase my skills, projects, and achievements. The site features smooth scrolling, interactive elements, and a clean design to create a professional online presence.</p>
+                    <p>Link: <a href="#">View Project</a></p>
+                </div> 
+
+                <div class="work2">
+                    <h3>AI-Powered Image Classifier</h3>
+                    <h4>Technologies Used: Python, TensorFlow, Keras, OpenCV</h4>
+                    <p>Description: A deep learning-based image classifier that can detect and categorize objects in images. The model was trained on a custom dataset and uses convolutional neural networks (CNNs) to achieve high accuracy.</p>
+                    <p>Link: <a href="#">View Project</a></p>
+                </div>                
+                <div class="work3">
+                    <h3>Real-Time Chat Application</h3>
+                    <h4>Technologies Used: Node.js, Express.js, WebSockets, MongoDB</h4>
+                    <p>Description: A real-time chat application where users can send messages instantly in different chat rooms. Built with WebSockets for real-time communication and MongoDB for message storage, providing an engaging user experience.</p>
+                    <p>Link: <a href="#">View Project</a></p>
+                </div>
+            </div>
+            <!-- 3rd section about skills & resume used diffrent div to make it easy to style --> 
+        </section>
+        <section id="resume">
+            <h2>Technical Skills & Tech Stack</h2>
+            <div class="twins">
+                <div class="twin1">
+                    <h3>💻 Full-Stack Development</h3>
+                    <p> Front-End: HTML, CSS, JavaScript, React, Vue.js
+                        Back-End: Python (Django, Flask), Node.js (Express.js)
+                        Databases: MySQL, PostgreSQL, MongoDB, Firebase
+                        Version Control & Deployment: Git, GitHub, Docker, CI/CD, AWS, Vercel
+                    </p>
+                    <br>
+                    <h3>🤖 Artificial Intelligence & Machine Learning</h3>
+                    <p>
+                        Deep Learning: TensorFlow, PyTorch, Keras
+                        Machine Learning: Scikit-learn, Pandas, NumPy
+                        Computer Vision: OpenCV, YOLO, CNNs
+                        Natural Language Processing (NLP): NLTK, spaCy, Transformers (Hugging Face)
+                        Data Science & Analytics: Jupyter Notebook, Matplotlib, Seaborn
+                        Big Data Technologies: Hadoop, Spark (learning)  
+                    </p>
+                    <br>
+                    <h3>🚀 Future Interests & Learning Goals</h3>
+                    <p>
+                        Reinforcement Learning (RL) & AI Agents
+                        Large Language Models (LLMs) & Generative AI
+                        Advanced Computer Vision & Edge AI
+                    </p>
+                </div>
+                <div class="twin2">
+                    <h3>🛠 DevOps & Tools</h3>
+                    <p>
+                        Containerization & Cloud: Docker, Kubernetes, AWS, Google Cloud
+                        APIs & Automation: RESTful APIs, FastAPI, Selenium, Web Scraping
+                        Wireframing & Prototyping (Figma, Adobe)
+                    </p>
+                    <br>
+                    <h3>🧠 Soft Skills & Communication</h3>
+                    <p>
+                        Languages & Communication: Fluent in Arabic, English, French, Spanish.
+                        Problem-Solving & Critical Thinking: Strong analytical mindset with a structured approach to tackling challenges.
+                        Collaboration & Teamwork: Works effectively in teams, balancing technical expertise with clear communication.
+                    </p>
+                    <br>
+                    <!-- added button to make it easy to download the resume on pdf file -->
+                    <button onclick="downloadpdf()">Download Resume</button>
+                </div>
+            </div>
+            <!-- 4th section about education&experience, also used diffrent div to make it easy to style -->
+        </section>
+        <section id="experience">
+            <h2>Experience & Education</h2>
+            <div class="experience11">
+                <div class="ed">
+                    <h3>Education</h3>
+                    <br>
+                    <h3>Master's in Software Engineering</h3>
+                    <p>
+                        GoMyCode 2024
+                        <br>
+                        ..........
+                    </p>
+                    <br>
+                    <h3>Bachelor's in Computer Science</h3>
+                    <p>
+                        Random Unversity 2021-2024
+                        <br>
+                        ..........
+                    </p>
+                    <br>
+                    <h3>Certifications</h3>
+                    <p>
+                        🔹 Google IT Automation with Python - Google Coursera (2024)
+                        <br>
+                        🔹 AWS Certified Cloud Practitioner - Amazon Web Services (2024)
+                        <br>
+                        🔹 Deep Learning Specialization - Andrew Ng, Coursera (2023)
+                        <br>
+                        🔹 Full-Stack Web Development with React - Meta (2023)
+                    </p>
+                </div>
+                <div class="exp">
+                    <h3>Experience</h3>
+                    <br>
+                    <h3>Junior Full-Stack Developer</h3>
+                    <p>TechHub Solutions
+                        June 2024_Present
+                        <br>
+                        🔹Developed and maintained web applications using React, Node.js, and MongoDB to provide seamless user experiences.
+                        <br>
+                        🔹Deployed applications using AWS and Docker, optimizing for scalability and performance.
+                        <br>
+                        🔹Collaborated in a team environment to implement new features, fix bugs, and improve user interfaces.
+                    </p>
+                    <br> <br>
+                    <h3>AI Intern</h3>
+                    <p>InnovateAI
+                        June 2023_August 2023
+                        <br>
+                        🔹Worked on building machine learning models with TensorFlow and Scikit-learn for predictive analytics.
+                        <br>
+                        🔹Contributed to computer vision projects using OpenCV to analyze and classify images in real-time.
+                        <br>
+                        🔹Collaborated with senior data scientists to refine models, improve accuracy, and handle large datasets.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <!-- 5th and last section containg image (requested in the checkpoint) also form for contacting zaama (requested in the checkpoint as well) -->
+        <section id="contact">
+            <h2>Contact me</h2>
+            <div class="contacting">
+                <!-- adding a random profile image -->
+                <div class="image">
+                    <img src="./res/uifaces-cartoon-image.jpg" style="height: 200px; width: 200px; border-radius: 5px;">
+                </div>
+                <!-- adding a contacting form ( labels & input areas) -->
+                <div class="form">
+                    <form action="">
+                        <div class="f">
+                            <div class="n">
+                                <label for="name" class="n1">Name:</label><br>
+                                <input type="text" id="name" class="n2" placeholder="Your name"><br>
+                            </div>
+                            <div class="e">
+                                <label for="email" class="e1">Email:</label><br>
+                                <input type="email" id="email" class="e2" placeholder="Your Email"><br>
+                            </div>
+                        </div>    <br>   
+                        <label for="message" class="m1">Message:</label><br>
+                        <input type="text" id="msg" class="m2" placeholder="Message"><br>
+                        
+                    </form>
+                </div>
+                
+            </div>
+
+        </section>
+    </div>
+    <!-- added a footer per requested in the chekpoint -->
+    <footer class="footer">
+        <!-- footer contains icons that work as links for diffrent contacting/viewing person's socials media -->
+        <div class="icons">
+            <ul>
+                <li><a href="https://github.com/" target="_blank"><img src="./res/github.png" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="https://mail.google.com/" target="_blank"><img src="./res/mail.png" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="tel:+213..."><img src="./res/phone.png" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img src="./res/linkedin.png" style="height: 30px; width: 30px;"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="./res/instagram.png" style="height: 30px; width: 30px;"></a></li>
+            </ul>
+        </div>
+        <br>
+        <!-- added a sign in the footer to make it look a bit polished idk -->
+        <p>Designed & Developed by Rihab Tebbakh - © 2025</p>
+    </footer>
+</body>
+</html>
+<!-- used a made up person so this act more as a template I guess  -->
